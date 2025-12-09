@@ -2,133 +2,146 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Quadro de Horários</title>
+  <title>Quadro de Horários do Professor LEONARDO NICKSON</title>
 
   <style>
-    body {
+    body{
       font-family: Arial, sans-serif;
-      background-color: #f4f6f8;
-      padding: 20px;
+      background:#f2f2f2;
+      padding:20px;
     }
-
-    h1 {
-      text-align: center;
+    h1{
+      text-align:center;
     }
-
-    table {
-      width: 100%;
-      max-width: 900px;
-      margin: 20px auto;
-      border-collapse: collapse;
-      background-color: white;
+    table{
+      width:100%;
+      max-width:900px;
+      margin:20px auto;
+      border-collapse:collapse;
+      background:white;
     }
-
-    th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: center;
-      font-size: 14px;
+    th, td{
+      border:1px solid #ccc;
+      padding:10px;
+      text-align:center;
     }
-
-    th {
-      background-color: #2c3e50;
-      color: white;
+    th{
+      background:#2c3e50;
+      color:white;
     }
-
-    td {
-      height: 60px;
-    }
-
-    td:hover {
-      background-color: #eef;
+    td{
+      height:60px;
+      font-size:14px;
     }
   </style>
 </head>
+
 <body>
 
-  <h1>Quadro de Horários</h1>
+<h1>Quadro de Horários do Professor</h1>
 
-  <table id="tabela-horarios">
-    <thead>
-      <tr>
-        <th>Horário</th>
-        <th>Segunda</th>
-        <th>Terça</th>
-        <th>Quarta</th>
-        <th>Quinta</th>
-        <th>Sexta</th>
-        <th>Sábado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr data-intervalo="07:30-09:30">
-        <td>07:30 - 09:30</td>
-        <td data-dia="Segunda"></td>
-        <td data-dia="Terça"></td>
-        <td data-dia="Quarta"></td>
-        <td data-dia="Quinta"></td>
-        <td data-dia="Sexta"></td>
-        <td data-dia="Sábado"></td>
-      </tr>
+<table id="tabela-horarios">
+  <thead>
+    <tr>
+      <th>Horário</th>
+      <th>Segunda</th>
+      <th>Terça</th>
+      <th>Quarta</th>
+      <th>Quinta</th>
+      <th>Sexta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-intervalo="07:30-09:30">
+      <td>07:30 - 09:30</td>
+      <td data-dia="Segunda"></td>
+      <td data-dia="Terça"></td>
+      <td data-dia="Quarta"></td>
+      <td data-dia="Quinta"></td>
+      <td data-dia="Sexta"></td>
+    </tr>
 
-      <tr data-intervalo="10:00-12:00">
-        <td>10:00 - 12:00</td>
-        <td data-dia="Segunda"></td>
-        <td data-dia="Terça"></td>
-        <td data-dia="Quarta"></td>
-        <td data-dia="Quinta"></td>
-        <td data-dia="Sexta"></td>
-        <td data-dia="Sábado"></td>
-      </tr>
+    <tr data-intervalo="10:00-12:00">
+      <td>10:00 - 12:00</td>
+      <td data-dia="Segunda"></td>
+      <td data-dia="Terça"></td>
+      <td data-dia="Quarta"></td>
+      <td data-dia="Quinta"></td>
+      <td data-dia="Sexta"></td>
+    </tr>
 
-      <tr data-intervalo="13:30-15:30">
-        <td>13:30 - 15:30</td>
-        <td data-dia="Segunda"></td>
-        <td data-dia="Terça"></td>
-        <td data-dia="Quarta"></td>
-        <td data-dia="Quinta"></td>
-        <td data-dia="Sexta"></td>
-        <td data-dia="Sábado"></td>
-      </tr>
-    </tbody>
-  </table>
+    <tr data-intervalo="13:30-15:30">
+      <td>13:30 - 15:30</td>
+      <td data-dia="Segunda"></td>
+      <td data-dia="Terça"></td>
+      <td data-dia="Quarta"></td>
+      <td data-dia="Quinta"></td>
+      <td data-dia="Sexta"></td>
+    </tr>
 
-  <script>
-    // CSV embutido
-    const csvText = `
-Segunda;1ºA;Matemática;07:30;09:30
-Terça;2ºB;Português;07:30;09:30
-Quarta;3ºC;História;10:00;12:00
-Quinta;1ºA;Geografia;13:30;15:30
-Sexta;2ºB;Ciências;10:00;12:00
-Sábado;3ºC;Redação;07:30;09:30
-    `;
+    <tr data-intervalo="16:00-18:00">
+      <td>16:00 - 18:00</td>
+      <td data-dia="Segunda"></td>
+      <td data-dia="Terça"></td>
+      <td data-dia="Quarta"></td>
+      <td data-dia="Quinta"></td>
+      <td data-dia="Sexta"></td>
+    </tr>
 
-    function montarQuadroHorarios(texto) {
-      const linhas = texto.trim().split('\n');
+    <tr data-intervalo="19:00-20:40">
+      <td>19:00 - 20:40</td>
+      <td data-dia="Segunda"></td>
+      <td data-dia="Terça"></td>
+      <td data-dia="Quarta"></td>
+      <td data-dia="Quinta"></td>
+      <td data-dia="Sexta"></td>
+    </tr>
 
-      linhas.forEach(linha => {
-        if (!linha.trim()) return;
+    <tr data-intervalo="21:00-22:40">
+      <td>21:00 - 22:40</td>
+      <td data-dia="Segunda"></td>
+      <td data-dia="Terça"></td>
+      <td data-dia="Quarta"></td>
+      <td data-dia="Quinta"></td>
+      <td data-dia="Sexta"></td>
+    </tr>
+  </tbody>
+</table>
 
-        const [dia, turma, disciplina, inicio, fim] = linha.split(';');
-        const intervalo = `${inicio}-${fim}`;
+<script>
+  const csvText = `
+Segunda;Sala ?;Disciplina;07:30;09:30
+Terça;Sala ?;Disciplina;07:30;09:30
+Quarta;Sala ?;Disciplina;10:00;12:00
+Quinta;Sala ?;Disciplina;13:30;15:30
+Sexta;Sala ?;Disciplina;16:00;18:00
+  `;
 
-        const linhaTabela = document.querySelector(
-          `tr[data-intervalo="${intervalo}"]`
-        );
-        if (!linhaTabela) return;
+  function montarQuadroHorarios(texto){
+    const linhas = texto.trim().split('\n');
 
-        const celula = linhaTabela.querySelector(
-          `td[data-dia="${dia}"]`
-        );
-        if (!celula) return;
+    linhas.forEach(linha => {
+      if(!linha.trim()) return;
 
-        celula.innerHTML = `<strong>${disciplina}</strong><br>${turma}`;
-      });
-    }
+      const [dia, turma, disciplina, inicio, fim] = linha.split(';');
+      const intervalo = `${inicio}-${fim}`;
 
-    montarQuadroHorarios(csvText);
-  </script>
+      const tr = document.querySelector(
+        `tr[data-intervalo="${intervalo}"]`
+      );
+      if(!tr) return;
+
+      const td = tr.querySelector(
+        `td[data-dia="${dia}"]`
+      );
+      if(!td) return;
+
+      td.innerHTML = `<strong>${disciplina}</strong><br>${turma}`;
+    });
+  }
+
+  montarQuadroHorarios(csvText);
+</script>
 
 </body>
 </html>
